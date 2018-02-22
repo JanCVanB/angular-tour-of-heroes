@@ -2,16 +2,24 @@ import { TestBed, async } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroService } from './hero.service';
+import { MessagesComponent } from './messages/messages.component';
+import { MessageService } from './message.service';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        HeroesComponent
+        HeroesComponent,
+        MessagesComponent
       ],
       imports: [
         FormsModule
+      ],
+      providers: [
+        HeroService,
+        MessageService
       ],
     }).compileComponents();
   }));

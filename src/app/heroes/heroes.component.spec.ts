@@ -1,11 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFirestore } from 'angularfire2/firestore';
 
 import { environment } from '../../environments/environment';
 import { HeroesComponent } from './heroes.component';
 import { HeroService } from '../hero.service';
+import { HeroServiceMock } from '../hero.service.mock';
 import { MessageService } from '../message.service';
 
 describe('HeroesComponent', () => {
@@ -18,12 +17,10 @@ describe('HeroesComponent', () => {
         HeroesComponent
       ],
       imports: [
-        FormsModule,
-        AngularFireModule.initializeApp(environment.firebase),
+        FormsModule
       ],
       providers: [
-        AngularFirestore,
-        HeroService,
+        { provide: HeroService, useClass: HeroServiceMock },
         MessageService
       ],
     })

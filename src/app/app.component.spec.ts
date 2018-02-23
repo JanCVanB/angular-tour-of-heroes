@@ -3,9 +3,10 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
-import { HeroesComponent } from './heroes/heroes.component';
 import { HeroService } from './hero.service';
 import { HeroServiceMock } from './hero.service.mock';
+import { HeroViewComponent } from './hero-view/hero-view.component';
+import { HeroesComponent } from './heroes/heroes.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 
@@ -14,6 +15,7 @@ describe('AppComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
+        HeroViewComponent,
         HeroesComponent,
         MessagesComponent
       ],

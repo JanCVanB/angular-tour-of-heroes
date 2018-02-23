@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 
 import { environment } from '../../environments/environment';
+import { HeroViewComponent } from '../hero-view/hero-view.component';
 import { HeroesComponent } from './heroes.component';
 import { HeroService } from '../hero.service';
 import { HeroServiceMock } from '../hero.service.mock';
@@ -14,7 +15,8 @@ describe('HeroesComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        HeroesComponent
+        HeroesComponent,
+        HeroViewComponent
       ],
       imports: [
         FormsModule

@@ -1,0 +1,21 @@
+<div>
+
+  <h2> 
+    {{ hero.name | uppercase }} 
+  </h2> 
+
+  <div> 
+    <label> 
+      name: 
+      <input [(ngModel)]='hero.name' placeholder='What is their name?'> 
+    </label> 
+  </div> 
+
+  <div> 
+    <label> 
+      power: 
+      <input [(ngModel)]='hero.power' placeholder='What is their superpower?'> 
+    </label> 
+  </div> 
+
+</div>

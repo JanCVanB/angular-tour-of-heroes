@@ -7,8 +7,9 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
-import { HeroesComponent } from './heroes/heroes.component';
 import { HeroService } from './hero.service';
+import { HeroViewComponent } from './hero-view/hero-view.component';
+import { HeroesComponent } from './heroes/heroes.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 
@@ -16,6 +17,7 @@ import { MessageService } from './message.service';
 @NgModule({
   declarations: [
     AppComponent,
+    HeroViewComponent,
     HeroesComponent,
     MessagesComponent
   ],

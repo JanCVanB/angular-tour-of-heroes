@@ -22,7 +22,7 @@ describe('HeroViewComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HeroViewComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+    // fixture.detectChanges();
   });
 
   it('should create', () => {

@@ -4,16 +4,16 @@ import { of } from 'rxjs/observable/of';
 import { Hero } from './hero';
 
 export const HEROES: Hero[] = [
-  { id: '11', name: 'Mr. Nice' },
-  { id: '12', name: 'Narco' },
-  { id: '13', name: 'Bombasto' },
-  { id: '14', name: 'Celeritas' },
-  { id: '15', name: 'Magneta' },
-  { id: '16', name: 'RubberMan' },
-  { id: '17', name: 'Dynama' },
-  { id: '18', name: 'Dr IQ' },
-  { id: '19', name: 'Magma' },
-  { id: '20', name: 'Tornado' }
+  { name: 'Mr. Nice', power: 'Friendship' },
+  { name: 'Narco', power: 'Friendship' },
+  { name: 'Bombasto', power: 'Friendship' },
+  { name: 'Celeritas', power: 'Friendship'  },
+  { name: 'Magneta', power: 'Friendship' },
+  { name: 'RubberMan', power: 'Friendship' },
+  { name: 'Dynama', power: 'Friendship' },
+  { name: 'Dr IQ', power: 'Friendship' },
+  { name: 'Magma', power: 'Friendship' },
+  { name: 'Tornado', power: 'Friendship' }
 ];
 
 export class HeroServiceMock {
